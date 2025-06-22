@@ -6,20 +6,102 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Resume</h1>
-    <nav>
+  <!-- Top Navigation Bar -->
+  <div class="top-bar">
+    <div class="title-area"><h1>Resume</h1></div>
+    <div class="center-area">
+      <a href="Vadym_Denysenko_Resume_Full.pdf" download class="download-button">
+        Download Full Resume
+      </a>
+    </div>
+    <nav class="nav-area">
       <a href="index.html">About</a>
       <a href="resume.html">Resume</a>
       <a href="portfolio.html">Portfolio</a>
     </nav>
-  </header>
-  <main>
-    <h2>Download</h2>
-    <p><a href="Vadym_Denysenko_Resume.pdf" download>Click to download (PDF)</a></p>
+  </div>
 
-    <h2>Experience</h2>
-    <p>Coming Soon...</p>
+  <!-- Main Content Container -->
+  <main class="container">
+    <!-- Left Column: Experience -->
+    <section class="experience-section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Software Engineer – INRIX</h3>
+          <span>Sept. 2024 – Present</span>
+          <p>Platform Team: Building APIs & scaling data infrastructure.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Research Assistant - University of Washington</h3>
+          <span>Oct. 2023 – June 2024</span>
+          <p>Security & Privacy Lab: <a href="https://ad-archive.cs.washington.edu/about" target="_blank">Studying Problematic Content in the Web Advertising Ecosystem</a></p>
+        </div>
+        <div class="timeline-item">
+          <h3>DevOps Engineer Intern - INRIX</h3>
+          <span>June 2023 – Oct. 2023</span>
+          <p>Cloud Engineering Team: AWS security and cost optimization</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Mathematics Tutor - Bellevue College</h3>
+          <span>June 2021 – June 2023</span>
+          <p>Turned 'I hate math' into 'Wait, this actually makes sense' one student at a time</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Column: Education, Skills, Certifications -->
+    <div class="right-column">
+      <section class="education-box">
+        <h2>Education</h2>
+        <div class="education-logos-container">
+          <div class="education-item">
+            <h3>University of Washington</h3>
+            <img src="images/uw-allen.jpg" alt="University of Washington" />
+            <span class="degree">B.S. in Computer Science</span>
+            <span class="year">2022–2024</span>
+          </div>
+          <div class="education-item">
+            <h3>University of Washington</h3>
+            <img src="images/uw-foster.jpg" alt="Minor in Business Administration" />
+            <span class="degree">Minor in Business Administration</span>
+            <span class="year">2022–2024</span>
+          </div>
+          <div class="education-item">
+            <h3>Bellevue College</h3>
+            <img src="images/bellevue-college.jpg" alt="Bellevue College" />
+            <span class="degree">Associate in Arts and Sciences</span>
+            <span class="year">2020–2022</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-box">
+        <h2>Skills</h2>
+        <div class="skills-logos">
+          <img src="images/skills/python.png" alt="Python" />
+          <img src="images/skills/java.png" alt="Java" />
+          <img src="images/skills/node.png" alt="Node" />
+          <img src="images/skills/postgres.png" alt="Postgres" />
+          <img src="images/skills/mysql.png" alt="MySQL" />
+          <img src="images/skills/spark.png" alt="Spark" />
+          <img src="images/skills/docker.png" alt="Docker" />
+          <img src="images/skills/github-actions.png" alt="GitHub Actions" />
+          <img src="images/skills/terraform.png" alt="Terraform" />
+          <img src="images/skills/aws.png" alt="AWS" />
+          <img src="images/skills/azure.png" alt="Azure" />
+        </div>
+      </section>
+
+      <section class="certifications-box">
+        <h2>Certifications</h2>
+        <div class="certifications">
+          <img src="images/certs/aws-saa-c02.png" alt="AWS Certified Solutions Architect - Associate" />
+          <img src="images/certs/aws-dva-c02.png" alt="AWS Certified Developer - Associate" />
+          <img src="images/certs/azure-az-900.png" alt="Microsoft Certified: Azure Fundamentals" />
+        </div>
+      </section>
+    </div>
   </main>
   <footer>
     <p>© 2025 Vadym Denysenko</p>
