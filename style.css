@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f0f0f3;
+  color: #111;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #ffffffcc; /* semi-transparent white */
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333; /* dark gray */
+  font-weight: 500;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  height: calc(100vh - 120px);
+  padding: 2rem;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.profile-card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.6); /* translucent white */
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 3px solid rgba(255, 255, 255, 0.7); /* subtle border */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333; /* dark gray */
+}
+
+.contact-info a {
+  color: #0A66C2; /* LinkedIn blue */
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(0 0 0.5px rgba(0,0,0,0.1));
+}
+
+.scrollable-content {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+.about-section {
+  background: rgba(255, 255, 255, 0.6); /* translucent white */
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  min-height: 200px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555; /* medium gray */
+  background: #ffffffcc; /* semi-transparent white */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.05);
+}
