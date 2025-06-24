@@ -75,17 +75,21 @@ footer {
   white-space: nowrap;
 }
 
-.download-button {
+/* ===== REUSABLE ACTION BUTTON ===== */
+.action-button {
+  display: inline-block;
   background-color: rgba(10, 102, 194, 1); /* blue */
   color: white;
   padding: 0.6rem 1.4rem;
   border-radius: 12px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 3px 8px rgba(10, 102, 194, 0.4); /* blue with opacity */
+  box-shadow: 0 3px 8px rgba(10, 102, 194, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.download-button:hover {
+.action-button:hover {
   background-color: rgba(8, 74, 138, 1); /* dark blue */
 }
 
@@ -135,6 +139,12 @@ footer {
   justify-content: flex-start;
   height: 100%;
   min-width: 0;
+}
+
+/* Center the button on the profile card */
+.contact-me {
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 /* ===== PORTFOLIO PAGE ===== */
@@ -330,6 +340,8 @@ main ul li {
 .github-icon {
   width: 18px;
   height: 18px;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -423,6 +435,53 @@ main ul li {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-form {
+  margin-top: 2.5rem; /* Add space below the intro paragraph */
+}
+
+.form-group {
+  margin-bottom: 1.5rem; /* Space between each form field */
+}
+
+.form-group label {
+  display: block; /* Ensure label is on its own line */
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%; /* Makes fields take full width of the container */
+  padding: 0.9rem;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #d1d1d6;
+  border-radius: 12px; /* Rounded corners to match the button */
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0a66c2;
+  box-shadow: 0 0 0 4px rgba(10, 102, 194, 0.15);
+}
+
+/* Container for centering the button */
+.form-submit {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.contact-form button {
+  border: none;
 }
 
 .page-container {

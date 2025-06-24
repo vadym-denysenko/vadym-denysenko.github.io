@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Vadym Denysenko</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <div class="top-bar">
+    <div class="title-area"><h1>Contact</h1></div>
+    <div class="center-area"></div>
+    <nav class="nav-area">
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="container">
+    <div class="page-box">
+      <h2>Let's Talk</h2>
+      <p>Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible.</p>
+
+      <!-- Formspree Form -->
+      <form action="https://formspree.io/f/mldnpzde" method="POST" class="contact-form">
+
+        <!-- Name Field -->
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Message Field -->
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="8" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-submit">
+          <button type="submit" class="action-button">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Vadym Denysenko</p>
+  </footer>
+</body>
+</html>

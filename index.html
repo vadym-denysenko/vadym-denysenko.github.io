@@ -16,22 +16,25 @@
 </head>
 <body>
   <div class="top-bar">
-    <div class="title-area"><h1>About</h1></div>
-    <div class="center-area"></div>
-    <nav class="nav-area"> <a href="index.html">About</a>
+    <div class="title-area"><h1>About Me</h1></div>
+    <div class="center-area">
+      <!-- No button needed in the center on the main page -->
+    </div>
+    <nav class="nav-area">
+      <a href="index.html">About</a>
       <a href="resume.html">Resume</a>
       <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 
-  <div class="container">
+  <main class="container">
     <!-- Left: Profile Card -->
     <aside class="profile-card">
       <img src="images/profile-pic.jpeg" alt="Vadym Denysenko" class="profile-pic">
       <h2>Vadym Denysenko</h2>
       <p>Software Engineer</p>
       <p>📍 Seattle, WA, United States</p>
-
       <div class="contact-info">
         <p>
           <a href="https://www.linkedin.com/in/vadym-denysenko-95aa52208/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
@@ -44,16 +47,33 @@
           </a>
         </p>
       </div>
+
+      <!-- Button Container -->
+      <div class="contact-me">
+        <a href="contact.html" class="action-button">Let’s Talk</a>
+      </div>
     </aside>
 
     <!-- Right: About Section -->
-    <main class="about-section">
-      <h2>About</h2>
-      <p>
-        Coming soon...
-      </p>
-    </main>
-  </div>
+    <section class="about-section">
+            <h2>Hey There👋🏼</h2>
+            <p>
+              I'm Vadym, a software engineer with experience primarily focused on building robust backend systems and managing cloud infrastructure. I love working with data-intensive applications and crafting efficient API interactions.
+            </p>
+            <p>
+              Currently, I'm part of the data platform team at <a href="https://inrix.com/" target="_blank" rel="noopener noreferrer"><strong>INRIX</strong></a>, a company recognized for its innovations in intelligent mobility. Here, I'm developing and enhancing core data infrastructure and APIs, aimed at ensuring our systems are both highly scalable and performant.
+            </p>
+            <p>
+              Prior to my current role, I gained valuable experience as an undergraduate research assistant at the <a href="https://seclab.cs.washington.edu/" target="_blank" rel="noopener noreferrer"><strong>University of Washington's Security & Privacy Lab</strong></a>. Under the guidance of Professor Franziska Roesner, I engaged in projects that involved web scraping and crawling to gather extensive data on the web advertisement ecosystem. This data was subsequently stored and organized within a database to facilitate detailed analysis of problematic content. This work was instrumental in developing my skills in data acquisition, database management, and systematic problem-solving.
+            </p>
+            <p>
+              I am always interested in exploring new engineering challenges, especially those at the intersection of large-scale data processing, API development, and cloud architecture optimization. 
+            </p>
+            <p>
+              If my background aligns with your needs or interests, I'd be happy to connect. Please feel free to reach out via the "Let's Talk" button or through LinkedIn.
+            </p>
+          </section>
+  </main>
 
   <footer>
     <p>© 2025 Vadym Denysenko</p>
