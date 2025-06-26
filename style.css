@@ -275,12 +275,29 @@ main ul li {
   overflow-y: auto; /* Add scroll if logos exceed height */
 }
 
+/* Styling for certifications */
+.certifications a {
+    display: inline-block;
+    margin: 5px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 /* Certification logos size */
 .certifications img {
   max-height: 120px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
+  display: block;
+  cursor: pointer;
+}
+
+/* Hover effect for certifications */
+.certifications a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 /* Skills logos container - flex with wrapping */
