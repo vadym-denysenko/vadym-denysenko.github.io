@@ -103,18 +103,165 @@ footer {
   align-items: stretch; /* Making direct children equal height */
   flex-wrap: wrap;
   min-height: 500px;
+  overflow: hidden; /* Prevent content from going below footer */
 }
 
 /* ===== ABOUT PAGE ===== */
+.about-right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  min-height: 0; /* Allow flex item to shrink */
+}
+
+.about-bottom-boxes {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  min-height: 0; /* Allow flex item to shrink */
+}
+
+.about-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.6); /* translucent white */
+  border-radius: 20px;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 0; /* Allow flex item to shrink */
+  overflow: hidden; /* Hide overflow to prevent scroll bars */
+}
+
+.about-box h3 {
+  margin: 0 0 1rem 0;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: #333;
+}
+
+.about-box p {
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  color: #555;
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+}
+
+/* Personal Interests Grid */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.2rem;
+  margin-top: 0.8rem;
+  overflow-y: auto;
+  max-height: calc(100% - 2.5rem);
+}
+
+.interest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.2rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  min-height: 50px;
+  justify-content: center;
+}
+
+.interest-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.interest-emoji {
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  margin-bottom: 0.1rem;
+  display: block;
+}
+
+.interest-text {
+  font-size: clamp(0.6rem, 0.9vw, 0.7rem);
+  font-weight: 500;
+  color: #333;
+  line-height: 1.1;
+}
+
+/* Career Interests */
+.career-interests {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+  overflow-y: auto;
+  max-height: calc(100% - 2.5rem);
+}
+
+.career-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.7rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  flex-shrink: 0;
+  flex: 1;
+}
+
+.career-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.career-icon {
+  font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+  flex-shrink: 0;
+}
+
+.career-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.career-details strong {
+  font-size: clamp(0.9rem, 1.4vw, 1rem);
+  color: #333;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.career-specialties {
+  font-size: clamp(0.75rem, 1.1vw, 0.8rem);
+  color: #666;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
 .profile-card {
   flex: 0 0 320px;
   max-width: 320px;
   background: rgba(255, 255, 255, 0.6); /* translucent white */
   border-radius: 20px;
-  padding: 2rem;
+  padding: clamp(1.5rem, 3vw, 2rem);
   box-shadow: 0 8px 30px rgba(0,0,0,0.1);
   text-align: center;
   box-sizing: border-box;
+}
+
+.profile-card h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  margin: 0 0 0.5rem 0;
+}
+
+.profile-card p {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  margin: 0.3rem 0;
 }
 
 .profile-pic {
@@ -128,17 +275,29 @@ footer {
 }
 
 .about-section {
-  flex: 1;
+  flex: 2; /* Give about section more space */
   background: rgba(255, 255, 255, 0.6); /* translucent white */
   border-radius: 20px;
-  padding: 2rem;
+  padding: clamp(1.5rem, 3vw, 2rem);
   box-shadow: 0 8px 30px rgba(0,0,0,0.1);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%;
+  min-height: 0; /* Allow flex item to shrink */
   min-width: 0;
+  overflow: hidden; /* Hide overflow to prevent scroll bars */
+}
+
+.about-section h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 0 0 1rem 0;
+}
+
+.about-section p {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
 }
 
 /* Center the button on the profile card */
@@ -377,6 +536,38 @@ main ul li {
     height: auto;
     overflow: visible; /* Allow content to spill in column layout if it gets too long */
     padding: 1.5rem;
+  }
+
+  .about-right-content {
+    width: 100%;
+  }
+
+  .about-bottom-boxes {
+    flex-direction: column;
+  }
+
+  .about-box {
+    width: 100%;
+  }
+
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2rem;
+    max-height: none;
+  }
+
+  .interest-item {
+    padding: 0.2rem;
+    min-height: 45px;
+  }
+
+  .career-interests {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .career-item {
+    padding: 0.5rem;
   }
 
   main {
